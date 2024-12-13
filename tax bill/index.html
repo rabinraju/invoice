@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>VM INDUSTRIES</h1>
+                <p>NO-96
+                    SAMRAJPETTAI NORTH STREET, <br>
+                    MecheriSalem, <br>
+                    TAMIL NADU,<br>
+                    636451<br>
+                    Mobile +919791749996 <br>
+                    Email vmindustries96@gmail.com<br>GSTIN 33MRCPK7671Q1ZV </p>
+            </div>
+            <div class="col-md-4">
+                <h1>ORIGINAL FOR RECIPIENT</h1> 
+                <img src="image (1).png">
+        </div>
+        <div class="col-md-12 mt-2 invoice-container">
+            <p class="invoice-header">Invoice #: VMINV14</p>
+            <p class="customer-details">
+                Customer Details: <br>
+                TestCustomer<br>
+                Test Company<br>
+                GSTIN: TEST1234<br>
+                Ph: 9876543210<br>
+                Email: testcustomer@gmail.com
+            </p>
+         <div class="col-md-12 mt-2 invoice-container1">
+                <p class="invoice-header1">Invoice Date: 18 Oct 2024</p>
+                <p class="customer-details1">
+                    Billing Address:<br>
+                    Test Address Line 1<br>
+                    Test Address Line 2<br>
+                    Test City, 123456<br>
+                </p>
+            </div>
+            <div class="col-md-12 mt-2 invoice-container2">
+                <p class="invoice-header2">Due Date: 18 Oct 2024</p>
+                <p class="customer-details2">
+                    Shipping Address:<br>
+                    Test Address Line 1<br>
+                    Test Address Line 2<br>
+                    Test City, 123456<br>
+                </p>
+            </div>
+            <div class="col-md-12 mt-2 invoice-container3">
+                <p class="invoice-header3">Dispatch From:</p>
+                <p class="customer-details3">
+                    VM INDUSTRIES<br>
+                    15/94 Samrajpettai North Street Mecheri Mettur <br>
+                    Salem West, TAMIL NADU, 636451<br>
+                    <h6>Place of Supply:<br>
+                    33-TAMIL NADU<br></h6>
+                </p>
+                    <div class="col-md-12 mt-2">
+                        <table class="table table-bordered">
+                            <tr>
+                                <th>#</th>
+                                <th>item no</th>
+                                <th>Rate / Item</th>
+                                <th>TaxableValue</th>
+                                <th>Qty</th>
+                                <th>Amount</th>
+                            </tr>
+                            <tr>
+                                <td><button class="btn btn danger">D</button></td>
+                                <td><input class="form-control" type="number" value="1" readonly></td>
+                                <td><input type="text" id="Rate_Item" class="form-control"></td>
+                                <td><input type="number" id="Taxable_Value" class="form-control" onkeyup="getTotel()"></td>
+                                <td><input type="number" id="Qty" value="1" class="form-control" onkeyup="getTotel()"></td>
+                                <td><input type="text" readonly id="Amount" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td><button class="btn btn danger">D</button></td>
+                                <td><input class="form-control" type="number" value="2" readonly></td>
+                                <td><input type="text" id="Rate_Item" class="form-control"></td>
+                                <td><input type="number" id="Taxable_Value" class="form-control" onkeyup="getTotel()"></td>
+                                <td><input type="number" id="Qty" value="1" class="form-control" onkeyup="getTotel()"></td>
+                                <td><input type="text" readonly id="Amount" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td><button class="btn btn danger">D</button></td>
+                                <td><input class="form-control" type="number" value="3" readonly></td>
+                                <td><input type="text" id="Rate_Item" class="form-control"></td>
+                                <td><input type="number" id="Taxable_Value" class="form-control" onkeyup="getTotel()"></td>
+                                <td><input type="number" id="Qty" value="1" class="form-control" onkeyup="getTotel()"></td>
+                                <td><input type="text" readonly id="Amount" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td><button class="btn btn danger">D</button></td>
+                                <td><input class="form-control" type="number" value="4" readonly></td>
+                                <td><input type="text" id="Rate_Item" class="form-control"></td>
+                                <td><input type="number" id="Taxable_Value" class="form-control" onkeyup="getTotel()"></td>
+                                <td><input type="number" id="Qty" value="1" class="form-control" onkeyup="getTotel()"></td>
+                                <td><input type="text" readonly id="Amount" class="form-control"></td>
+                            </tr>
+                            
+                            <tr>
+                                <td colspan="4"></td>
+                                <td colspan="2">
+                                    subtotal
+                                    <input type="number" id="subtotal" class="form-control" readonly>
+                                    tax(%)
+                                    <input type="number" id="tax"onkeyup="calculateTax()" class="form-control" >
+                                    tax amount
+                                    <input type="number" id="taxtotal" class="form-control" readonly>
+                                    net total
+                                    <input type="number" id="nettotal" class="form-control" readonly>
+                                    <div class="container1">
+                                        <label for="nettotal">Total Items / Qty : 4 / 4</label><br>                            
+                                        <button onclick="convertToWords()">Convert</button>
+                                        <div class="result" id="result"></div>
+                                    </div>
+                                    <!-- <button class="btn btn-primary mt-2" onclick="addRow()">Add Item</button> -->
+            
+                                    <button class="btn btn-success mt-2"  onclick="printInvoice()">Print Invoice</button>
+                                    
+                                    <button class="btn btn-info mt-2" onclick="saveInvoice()">Save Invoice</button>
+                                    <form action="" method="POST">
+                                        <input type="hidden" name="invoice_number" value="VMINV14">
+                                        <input type="hidden" name="invoice_date" value="18 Oct 2024">
+                                        <input type="hidden" name="customer_name" value="TestCustomer">
+                                        <input type="hidden" name="subtotal" id="subtotal_field">
+                                        <input type="hidden" name="tax" id="tax_field">
+                                        <input type="hidden" name="tax_amount" id="taxtotal_field">
+                                        <input type="hidden" name="discount" id="discount_field">
+                                        <input type="hidden" name="net_total" id="nettotal_field">
+                                        <button class="btn btn-primary" type="submit">Save Invoice</button>
+                                    </form>
+                                    
+                                    <input type="number" id="discount" class="form-control" onkeyup="calculateNetTotal()">
+                                    <label for="discount">Discount (%):</label>
+                                    <p>Date: <span id="date"></span></p>
+                                <div class="item-count-display">
+                                    <!-- <p>Total Items: <span id="total-items">0</span></p> -->
+            </div>
+       
+                            <div class="col-md-12 mt-2 invoice-container6">
+                                <p class="invoice-header6">For VM INDUSTRIES</p>
+                                <p class="customer-details6"></p>
+                                <img src="image (2).png" alt="">
+                                <p>Authorized Signatory</p>
+                        <div class="col-md-12 mt-2 invoice-container4">
+                            <p class="invoice-header4">Pay using UPI:</p>
+                            <p class="customer-details4"></p>
+                            <img src="image.png" alt="UPI QR Code">
+                            <div class="col-md-12 mt-2 invoice-container5">
+                                <p class="invoice-header5">Bank Details:</p>
+                                <p class="customer-details5"></p>
+                                    Bank: HDFC Bank<br>
+                                    Account #: 50200075736430<br>
+                                    IFSC Code: HDFC0002222<br>
+                                    Branch: METTUR<br>
+                                </p>
+                                <a href="https://getswipe.in/">Swipe | Simple Invoicing, Billing and Payments | Visit getswipe.in</a>
+                                <p>Page 1 / 1 This is a digitally signed document.</p>
+                            </div>
+                        </div>
+                        </div>    
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+        </div>
+    <script type="text/javascript">
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

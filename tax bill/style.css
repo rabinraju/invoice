@@ -1,0 +1,454 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f8f9fa; */
+    margin: 0;
+    padding: 0;
+    color: #131010;
+}
+
+/* Container and Row */
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Section */
+h1 {
+    color: #030405;
+    font-weight: bold;
+}
+
+p {
+    color: #0a0b0c;
+    font-size: 16px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #0d0f11;
+}
+
+table th {
+    background-color: #f1f3f4;
+    color: #151212;
+}
+
+table td {
+    background-color: #f8f9fa;
+}
+
+.table-bordered {
+    right: -188px ;
+    top: -10px;
+    border: 1px solid #dee2e6;
+}
+.table-bordered td {
+    border: 1px solid #ffff;
+}
+.invoice-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    /* border: 1px solid #ddd; */
+    border-radius: -8px;
+    font-family: Arial, sans-serif;
+    /* background-color: #f9f9f9; */
+}
+
+.invoice-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.customer-details {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+.invoice-container1 {
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    top: -195px;
+    font-family: Arial, sans-serif;
+    /* background-color: #f9f9f9; */
+}
+
+.invoice-header1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.customer-details1 {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+.invoice-container2 {
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    top: -365px;
+    right: -280px;
+    font-family: Arial, sans-serif;
+    /* background-color: #f9f9f9; */
+}
+
+.invoice-header2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.customer-details2 {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+.invoice-container3 {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    align-items: center;
+    top: -365px;
+    right: -3px;
+    font-family: Arial, sans-serif;
+    /* background-color: #f9f9f9; */
+}
+
+.invoice-header3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.customer-details3 {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+.invoice-container4 { 
+    position: absolute; 
+    left: -650px; 
+    padding: 10px;
+    width: 800px;
+    border-radius: 10px; 
+    top: 0;
+    max-width: 400px; 
+    margin: auto;
+}
+.invoice-header4 {
+    font-size: 20px; 
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px; 
+    text-align: center;
+}
+
+.customer-details4 {
+    font-size: 4px; 
+    color: #555; 
+    margin-bottom: 10px; 
+    text-align: center; 
+}
+
+.invoice-container4 img {
+    display:block; 
+    max-width: 100%; 
+    height: auto; 
+    margin: 0 auto; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+}
+
+.invoice-container5 {
+    /* background-color: #f5f5f5; */
+    /* border: 1px solid #ddd; */
+    border-radius: 8px;
+    padding: 20px; 
+    text-align:start;
+    align-items:start;
+    right: -290px;
+    top: -260px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+.invoice-header5 {
+    font-size: 20px; 
+    font-weight: bold; 
+    color: #333; 
+    margin-bottom: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.customer-details5 {
+    font-size: 14px; 
+    line-height: 1.8; 
+    margin-bottom: 10px;
+    text-align: left; 
+}
+
+.customer-details5 b {
+    color: #000;
+    font-weight: bold; 
+}
+.invoice-container5 a {
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: absolute; 
+    bottom: -100px; /* Aligns the div to the bottom of the page */
+    left: -230px;
+    color: #007bff; /* Blue color for links */
+    text-decoration:none; /* Removes the underline from the link */
+    font-weight: bold; /* Makes the link stand out */
+  }
+  
+  .invoice-container5 a:hover {
+    text-decoration: underline; 
+    color: #0056b3; 
+  }
+  
+  .invoice-container5 p:last-of-type {
+    font-size: 12px; 
+    
+    color: #050404; 
+    margin-top: 15px;
+    text-align: center; 
+  }
+
+/* Container Styling */
+.invoice-container6 {
+    margin-top: 20px; 
+    
+    text-align: center; 
+    /* border: 1px solid #ddd; Light border around the container */
+    padding: 10px;
+    /* background-color: #f9f9f9;  */
+    border-radius: 8px; 
+}
+  
+  /* Header Styling */
+  .invoice-header6 {
+    font-size: 18px; 
+    font-weight: bold;
+    color: #333; 
+    margin-bottom: 10px; 
+    text-transform: uppercase;
+  }
+  
+  /* Customer Details Styling */
+  .customer-details6 {
+    font-size: 14px; 
+    color: #555; 
+    margin-bottom: 10px; 
+  }
+  
+  /* Image Styling */
+  .invoice-container6 img {
+    max-width: 50%; 
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    margin-top: 1px; 
+  }
+
+/* Buttons */
+button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button.btn.danger {
+    background-color: #f0eded;
+}
+
+/* Form Controls */
+input.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+input.form-control:focus {
+    border-color: #80bdff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.col-md-4 h1 {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #495057;
+}
+.col-md-4 img {
+    display:flex; 
+    max-width: 40%; 
+    height: auto; 
+    margin: 0 auto; 
+    /* border: 1px solid #ddd;  */
+    /* border-radius: 5px; */
+}
+
+table input[type="number"],
+table input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+#subtotal,
+#taxtotal,
+#nettotal {
+    font-weight: bold;
+    background-color: #e9ecef;
+}
+
+@media (max-width: 768px) {
+    .col-md-8, .col-md-4 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+}
+
+th, td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #eef2f5;
+    color: white;
+    font-weight: bold;
+}
+
+td button {
+    /* border: none; */
+    background-color: rgb(20, 8, 8);
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+td button:hover {
+    background-color: rgb(16, 4, 4);
+}
+.item-count-display {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.footer {
+    text-align: center;
+    background-color: #ebecee;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+.actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.actions .btn {
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    .actions .btn {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+}
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f4f8;
+    color: white;
+    border-radius: 10px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+}
+
+.header p {
+    font-size: 1rem;
+}
+
+.container1 {
+    margin: auto;
+    align-items:flex-start;
+}
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+.result {
+    margin-top: 20px;
+    /* padding: 10px; */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    /* white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+}
